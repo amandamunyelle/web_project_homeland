@@ -1,0 +1,131 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 830px;
+  margin: 0 auto;
+  padding-right: 12.03%;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0 0 40px;
+  max-width: 830px;
+}
+
+.intro__text {
+  max-width: 738px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 10px;
+}
+
+.intro__author {
+  max-width: 732px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: right;
+}
+
+.intro__description {
+  max-width: 722px;
+  margin: 32px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+  }
+  .intro__title {
+    max-width: 707px;
+    font-size: 45px;
+    line-height: 49px;
+    margin: 0 0 50px;
+  }
+  .intro__text {
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 0 26px;
+  }
+  .intro__author {
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .intro__description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 163px;
+    margin: 0 0 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro {
+    max-width: 288px;
+  }
+  .intro__title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0 0 40px;
+  }
+  .intro__text {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px;
+  }
+  .intro__author {
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .intro__description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 163px;
+    margin: 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    max-width: 800px;
+    padding-right: 10%;
+  }
+  .intro__title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .intro {
+    max-width: 90%;
+    padding-right: 5%;
+  }
+  .intro__title {
+    font-size: 38px;
+    line-height: 42px;
+    margin: 0 0 35px;
+  }
+  .intro__text {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .intro__author {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .intro__description {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
