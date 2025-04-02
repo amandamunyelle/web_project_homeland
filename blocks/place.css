@@ -1,0 +1,350 @@
+.place {
+  display: grid;
+  grid-template-areas:
+    "title artist"
+    "image paragraph"
+    "button paragraph"
+    ". paragraph";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+.place__title {
+  grid-area: title;
+  font-family: "Inter";
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  color: #ffffff;
+}
+
+.place__website {
+  grid-area: artist;
+  align-self: flex-end;
+}
+
+.place__artist-title {
+  font-family: "Inter";
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  margin: 0 0 8px 0;
+}
+
+.place__artist {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+}
+
+.place__image {
+  grid-area: image;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background: #000000;
+  box-shadow: 10px 10px 25px 0px #00000080;
+}
+
+.place__image:hover {
+  opacity: 50%;
+}
+
+.place__description {
+  grid-area: paragraph;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.place__paragraph {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+  color: #fff;
+}
+
+.place__button {
+  grid-area: button;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-top: auto;
+  margin-bottom: 80px;
+}
+
+.place__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media (max-width: 320px) {
+  .place {
+    width: 100%;
+    max-width: 320px;
+    display: grid;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    row-gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .place__title {
+    grid-area: title;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .place__website {
+    grid-area: artist;
+    text-align: left;
+  }
+
+  .place__artist-title,
+  .place__artist {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .place__image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .place__description {
+    grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .place__paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .place__button {
+    grid-area: button;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .place {
+    width: 100%;
+    max-width: 544px;
+    display: grid;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    row-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .place__title {
+    grid-area: title;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .place__website {
+    grid-area: artist;
+    text-align: left;
+  }
+
+  .place__artist-title,
+  .place__artist {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .place__image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .place__description {
+    grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .place__button {
+    grid-area: button;
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    width: 100%;
+    max-width: 768px;
+    display: grid;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    row-gap: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .place__title {
+    grid-area: title;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .place__website {
+    grid-area: artist;
+    text-align: left;
+  }
+
+  .place__artist-title,
+  .place__artist {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .place__image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .place__description {
+    grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .place__button {
+    grid-area: button;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 0;
+    row-gap: 24px;
+  }
+
+  .place__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .place__artist-title {
+    font-size: 10px;
+  }
+
+  .place__artist {
+    font-size: 16px;
+  }
+
+  .place__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .place__description {
+    gap: 20px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .place__button {
+    font-size: 16px;
+    padding: 10px 16px;
+    margin-bottom: 40px;
+  }
+}
